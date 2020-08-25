@@ -92,6 +92,9 @@ See [nginx.conf](https://github.com/smyrgeorge/openresty-keycloak-gateway/blob/m
 In the `location` section, `proxy_pass` is used to forward request to another service. In this case we forward the request to a simple echo http server. 
 
 # Test http server, for debug purposes
+
+*Note: in each request http-echo-server adds 2 sec timeout.*
+
 `npm i -g http-echo-server`
 
 # Links
