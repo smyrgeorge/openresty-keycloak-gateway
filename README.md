@@ -7,7 +7,7 @@ Technologies used:
 * Keyclaok, provides authentication, authorization, user management, etc
 * OpenResty (with `lua-resty-openidc`  module), web platform (like nginx)
 
-Note that the reverse proxy needs to validate a JWT token in order to forward the request. In this case we need to provide an `Authorization: Bearer bearer_token_here` haeder.
+Note that the reverse proxy needs to validate a JWT token in order to forward the request. In this case we need to provide an `Authorization: Bearer bearer_token_here` header.
 
 Also in every request the gateway, replaces the `Authorization` with  a `X-Real-Name` header to the request.
 
@@ -91,7 +91,7 @@ See [nginx.conf](https://github.com/smyrgeorge/openresty-keycloak-gateway/blob/m
 
 In the `location` section, `proxy_pass` is used to forward request to another service. In this case we forward the request to a simple echo http server. 
 
-# Test http server, for debug perposes
+# Test http server, for debug purposes
 `npm i -g http-echo-server`
 
 # Links
