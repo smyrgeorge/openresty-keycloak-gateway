@@ -1,10 +1,10 @@
 # Description
 
-**openresty-keyclaok-gateway** is  a fully working example of a reverse proxy, that supports JWT authentication.
+**openresty-keycloak-gateway** is  a fully working example of a reverse proxy, that supports JWT authentication.
 
 Technologies used:
 
-* Keyclaok, provides authentication, authorization, user management, etc
+* Keycloak, provides authentication, authorization, user management, etc
 * OpenResty (with `lua-resty-openidc`  module), web platform (like nginx)
 
 Note that the reverse proxy needs to validate a JWT token in order to forward the request. In this case we need to provide an `Authorization: Bearer bearer_token_here` header.
